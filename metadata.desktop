@@ -1,21 +1,21 @@
 [Desktop Entry]
-Name=Mudeer
-Comment=Tiling for Ultrawide and Super Ultrawide Monitors
+Name=Mudeer Dual Input
+Comment=Tiling for Ultrawide and Super Ultrawide Monitors with Dual Inputs
 Icon=preferences-system-windows-script-test
 Type=Service
 
 X-Plasma-API=javascript
 X-Plasma-MainScript=code/mudeer.js
 
-X-KDE-PluginInfo-Author=Abdulla Bubshait
-X-KDE-PluginInfo-Email=darkstego@gmail.com
-X-KDE-PluginInfo-Name=mudeer-ultrawide
-X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Author=Outdoor Acorn
+X-KDE-PluginInfo-Email=outdooracorn@gmail.com
+X-KDE-PluginInfo-Name=mudeer-ultrawide-dual-input
+X-KDE-PluginInfo-Version=0.1
 
 X-KDE-PluginInfo-Depends=
 X-KDE-PluginInfo-License=MIT
 X-KDE-ServiceTypes=KWin/Script,KCModule
 X-KDE-Library=kwin/effects/configs/kcm_kwin4_genericscripted
-X-KDE-PluginKeyword=mudeer-ultrawide
-X-KDE-ParentComponents=mudeer-ultrawide
+X-KDE-PluginKeyword=mudeer-ultrawide-dual-input
+X-KDE-ParentComponents=mudeer-ultrawide-dual-input
 Type=Service

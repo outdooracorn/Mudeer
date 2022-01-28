@@ -40,10 +40,24 @@ function adjustGeometry(geometry, x, xSlots, xSize) {
 
 // main function called
 function move(workspace, xSlots, x, xSize, yPos) {
+    // TODO: move these variables to the config
+    var combinedArea = {
+        x: 0,
+        y: 0,
+        width: 5120,
+        height: 1440
+    }
+    var combinedScreens = [1, 2]
+
     var client = workspace.activeClient
     if (client.specialWindow) return
 
-    var area = workspace.clientArea(KWin.MaximizeArea, client)
+    if (combinedScreens.indexOf(workspace.activeScreen) >= 0) {
+        var area = combinedArea
+    } else {
+        var area = workspace.clientArea(KWin.MaximizeArea, client)
+    }
+
     // Adjust for yPos (0:Full Height, 1: Top, 2: Bottom)
     var y = 0
     var ySlots = 1
